@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Records</title>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<br><br>
+	
+
+	<div  class="jumbotron" >
+		<h1> <center>  Records </center> </h1>
+	</div>
+    <center>
+	<table class="table table-hover" style ="width:70%"  >
+	 <!--   Table Header   --> 
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>Height</th>
+        <th>Weight</th>
+        <th>Sex</th>
+      </tr>
+    </thead>
+   <!--   TableBody   --> 
+    <tbody>   
+    <%recs.forEach( function( rec ){ %>
+      <tr>
+        <td> <%= rec.firstName %> </td>
+        <td> <%= rec.lastName %>  </td>
+        <td> <%= rec.age %>  </td>
+        <td> <%= rec.height %>  </td>
+        <td> <%= rec.weight %>  </td>
+        <td> <%= rec.sex %>  </td>
+      </tr>
+      <% });%>
+    </tbody>
+  </table>
+  </center>
+
+</body>
+</html>
+
+
